@@ -1,6 +1,6 @@
 var devs = [];
 var d = require('discord.js');
-var o = require('outputs.js');
+var o = require('./outputs');
 
 exports.log = function(msg) {
     o.log(msg);
