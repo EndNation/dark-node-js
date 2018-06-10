@@ -1,31 +1,18 @@
 var devs = [];
-
-function log(m)
-{
-    console.log("[LOG]:" + m);
-}
-
-function warn(m)
-{
-    console.warn("[WARN]:" + m);
-}
-
-function errors(m)
-{
-    console.error("[ERROR]:" + m);
-}
+var d = require('discord.js');
+var o = require('outputs.js');
 
 exports.log = function(msg) {
-    log(msg);
+    o.log(msg);
 }
 
 exports.warn = function(warnMsg) {
-    warn(warnMsg);
+    o.warn(warnMsg);
 }
 
 exports.error = function(errMsg)
 {
-    errors(errMsg);
+    o.errors(errMsg);
 }
 
 exports.addDev = function(devID)
