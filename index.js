@@ -39,3 +39,13 @@ exports.addDev = function(devID)
         devs.push(devID);
     }
 }
+
+exports.getDev = function()
+{
+    var i;
+
+    for (i = 0; i < devs.length; i++)
+    {
+        log(devs[i]);
+    }
+}
