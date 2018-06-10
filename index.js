@@ -2,6 +2,17 @@ var devs = [];
 var d = require('discord.js');
 var o = require('./outputs');
 var version = "v1.6.0";
+var c = new d.Client();
+
+exports.disconnect = function()
+{
+    c.destroy();
+}
+
+exports.login = function(token)
+{
+    c.login(token);
+}
 
 exports.log = function(msg) {
     o.log(msg);
