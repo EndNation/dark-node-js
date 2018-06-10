@@ -1,9 +1,15 @@
 var devs = [];
 var d = require('discord.js');
 var o = require('./outputs');
+var version = "v1.6.0";
 
 exports.log = function(msg) {
     o.log(msg);
+}
+
+exports.getVersion = function()
+{
+    o.log("DarkNodeJS Version: " + version);
 }
 
 exports.warn = function(warnMsg) {

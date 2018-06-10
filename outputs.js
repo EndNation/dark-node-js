@@ -1,14 +1,14 @@
-function log(m)
+exports.log = function(m)
 {
     console.log("[LOG]:" + m);
 }
 
-function warn(m)
+exports.warn = function(m)
 {
     console.warn("[WARN]:" + m);
 }
 
-function errors(m)
+exports.errors = function(m)
 {
     console.error("[ERROR]:" + m);
-}
+} 
